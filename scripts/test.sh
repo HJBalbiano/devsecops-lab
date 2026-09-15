@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
-set -e
 
-echo "Running tests..."
-dotnet test --no-build
+set -euo pipefail
 
-echo "Tests completed successfully."
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+cd "$ROOT_DIR"
+
+echo "==> Running tests"
+dotnet test
+
+echo "==> Tests completed successfully"

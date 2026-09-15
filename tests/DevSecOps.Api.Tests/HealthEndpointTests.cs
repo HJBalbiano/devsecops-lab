@@ -18,6 +18,6 @@ public class HealthEndpointTests
     {
         var response = await _client.GetAsync("/health");
 
-        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
 }

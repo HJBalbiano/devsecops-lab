@@ -1,0 +1,17 @@
+.git
+.github
+
+**/bin
+**/obj
+
+.vs
+.vscode
+.idea
+
+.env
+.env.*
+
+TestResults
+coverage
+
+README.md
